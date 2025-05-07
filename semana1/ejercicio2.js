@@ -12,6 +12,8 @@ async function main() {
   } else {
     console.log('No se cumplen los valores de búsqueda');
   }
+
+  //ejercicio de la clase 2
 }
 
 main();
