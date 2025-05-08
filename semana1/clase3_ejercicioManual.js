@@ -7,6 +7,6 @@ async function main() {
   if (dia >=1 && dia <=7) {
     console.log(diasSemana[dia-1]);
   } else console.log("no es un numero valido");
-  
+  //comentarios
 }
 main();
