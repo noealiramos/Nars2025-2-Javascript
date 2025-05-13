@@ -9,7 +9,7 @@ const { ask } = require('../helpers/input');
 
 function diffDays(actualDate,birthDate){
     const diff = actualDate - birthDate;
-    const edadEnDias = Math.floor(diff / (1000*60*60*24 ) );//diff da el dato en milisegundos entre una y otra fecha. Nota: el Math.floor es para redondear
+    const edadEnDias = Math.floor(diff / (1000*60*60*24) )/365;//diff da el dato en milisegundos entre una y otra fecha. Nota: el Math.floor es para redondear
     
     //const annos = edadEnDias / 365; está MAL
     return edadEnDias;
@@ -38,9 +38,8 @@ const birthDate = new Date(`${birthDateYear}-${birthDateMonth}-${birthDateDay}`)
 //console.log(diff);
 
 console.log("Haz vivido aprox: ");
-console.log(`${diffDays(actualDate,birthDate)} días`);
+console.log(`${diffDays(actualDate,birthDate)} años`);
 //console.log("Lo cual es aprox: "+ Años);
 
 }
-
 main();
