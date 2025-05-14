@@ -1,4 +1,5 @@
 //OBJETIVO: imprimir números pares hasta al 100
+//si lo hace en ascendente y en descendente
 
 const {ask} = require('../helpers/input');
 
@@ -12,10 +13,9 @@ async function main(){
 
 console.log("---------------");  
 
-  //console.log("Va Descendente con FOR: PENDINTE POR TERMINAR");  
-  //for (let i=numeroPar; i<=numeroPar; i=i+2){
-  //  console.log(i);
- }//
-
+  console.log("Va Descendente con FOR: PENDINTE POR TERMINAR");  
+  for (let i=numeroPar; i>=2; i=i-2){
+    console.log(i);
+ }
 }
 main();
