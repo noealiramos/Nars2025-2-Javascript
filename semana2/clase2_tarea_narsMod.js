@@ -15,7 +15,8 @@
 const { ask } = require('../helpers/input');
 
 function imprimir(valorDei,nombreDeVariable){
-  console.log(valorDei,nombreDeVariable);
+  console.log(valorDei, nombreDeVariable); //RESULT = [ 0 ] papaya
+  //console.log(valorDei + ". "+ nombreDeVariable); //RESULT = 0. papaya
 }
 
 
