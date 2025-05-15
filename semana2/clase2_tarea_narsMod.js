@@ -14,8 +14,8 @@
 
 const { ask } = require('../helpers/input');
 
-function imprimir(nombreDeVariable){
-  console.log(nombreDeVariable);
+function imprimir(valorDei,nombreDeVariable){
+  console.log(valorDei,nombreDeVariable);
 }
 
 
@@ -54,15 +54,8 @@ async function main() {
       console.log('Va la lista actual de frutas existentes: ');
       console.log("---------------------------------------");
        for (let i=0; i<frutas.length; i++){
-        imprimir(frutas[i]);
+        imprimir([i],frutas[i]);
   }
-
-        
-        
-
-
-
-
 
       console.log("---------------------------------------");
     }  else if (opcion === '4') {
