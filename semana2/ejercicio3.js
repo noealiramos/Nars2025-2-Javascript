@@ -15,6 +15,8 @@ async function main() {
     }
         }
     }
+  
+  
   const nombres = ["Ana", "Roberto", "Luis", "Mariana", "Sol"];
 
   for (let index = 0; index < nombres.length; index++) {
@@ -42,5 +44,5 @@ async function main() {
     resultado = resultado + palabraAlReves[i];
   }
   console.log("Al revés", resultado);
-}
+
 main();
