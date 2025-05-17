@@ -1,7 +1,6 @@
 const { ask } = require('../helpers/input');
 
 async function main() {
-<<<<<<< HEAD
  
   const nombres = ["Ana","Roberto","Luis","Mariana","Sol","Paco","Alvaro","Adriana","Pancho","Max"];
   
@@ -16,7 +15,6 @@ async function main() {
     }
         }
     }
-=======
   const nombres = ["Ana", "Roberto", "Luis", "Mariana", "Sol"];
 
   for (let index = 0; index < nombres.length; index++) {
@@ -45,5 +43,4 @@ async function main() {
   }
   console.log("Al revés", resultado);
 }
->>>>>>> upstream/main
 main();
