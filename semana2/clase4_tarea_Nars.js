@@ -13,19 +13,20 @@
 //
 //La calificación más alta y la más baja
 
+
 const { ask } = require('../helpers/input');
 
 // Función principal de análisis
 function analizarCalificaciones(calificaciones) {
   let aprobados = 0;
   let reprobados = 0;
-  let suma = 0;
   let mayor = calificaciones[0];
   let menor = calificaciones[0];
+  let suma = 0;
 
   for (let i = 0; i < calificaciones.length; i++) {
     const nota = calificaciones[i];
-    suma += nota;
+    suma = suma + nota; //suma += nota;
 
     if (nota >= 70) {
       aprobados++;
@@ -52,8 +53,8 @@ function analizarCalificaciones(calificaciones) {
 async function main() {
   const calificaciones = [95, 40, 70, 88, 63, 100, 58, 79];
 
-  console.log("\n📊 Análisis de calificaciones:");
-  console.log(`Calificaciones: ${calificaciones.join(', ')}`);
+  console.log("\n Análisis de calificaciones: ");
+  console.log(` Calificaciones: ${calificaciones.join(', ')}:`);
 
   const resultado = analizarCalificaciones(calificaciones);
 
