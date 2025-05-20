@@ -1,0 +1,36 @@
+
+const { ask } = require('../helpers/input');
+
+async function main() {
+
+  const persona1 = {
+      nombre: "Claudia",
+      edad: 34,
+      ocupacion: "Desarrollador",
+      saludar: function () {
+        console.log(`Hola mi nombre es ${this.nombre} `);
+    }
+}   
+    
+    const persona2 = {
+        nombre: "Carlos",
+        edad: 28,
+        ocupacion: "Estudiante",
+        saludar: function () {
+        console.log(`Hola mi nombre es ${this.nombre} `);
+      }
+    }
+
+
+persona1.saludar(); //para que la funcion se ejecute debe llevar ()
+persona2.saludar(); //para que la funcion se ejecute debe llevar ()
+
+//personas[0].saludar(); - cuando se usa un array
+//personas[1].saludar(); - cuando se usa un array
+
+//for (let i=0; i<personas.lenght; i++){
+//personas[i].saludar();
+
+}
+
+main();

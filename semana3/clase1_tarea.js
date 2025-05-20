@@ -15,3 +15,5 @@
 // El promedio general de calificaciones.
 // La calificación mayor.
 // La calificación menor.
+
+//el objeto alumno se va a guardar en un array, y cada objeto tendrá sus claves

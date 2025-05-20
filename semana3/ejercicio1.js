@@ -6,7 +6,7 @@ async function main() {
   const personas = [
     {
       nombre: "Rodrigo",
-      edad: 36,
+      edad: 34,
       profesion: "Desarrollador",
       hobbies: ["nadar", "futbol", "leer"],
       birthDate: "1988-08-08",
