@@ -24,7 +24,7 @@ async function main() {
   let alumnos = [];
   let continuar = 'y';
 
-  while (continuar.toLowerCase() === 'y' ) {
+  while (continuar.toLowerCase() === 'y' ) { //inicio del while
     const nombre = await ask("Ingresa el nombre del alumno: ");
     const edad = parseInt(await ask("Ingresa la edad del alumno: "), 10); 
     const calificacion = parseFloat(await ask("Ingrese la calificación del alumno: "));
@@ -56,7 +56,7 @@ async function main() {
     alumnos.push(alumno);
 
     continuar = await ask("¿Deseas agregar otro alumno? (y / n): ");
-  }
+  } //fin del while
 
   // Mostrar info individual
   console.log("\n=== Información de Alumnos ===");
@@ -66,12 +66,18 @@ async function main() {
 
   // Estadísticas
   const aprobados = alumnos.filter(a => a.calificacion >= 70).length;
+
   const puedenVotar = alumnos.filter(a => a.edad >= 18).length;
+
   const promedio = alumnos.reduce((sum, a) => sum + a.calificacion, 0) / alumnos.length;
+
   const calificaciones = alumnos.map(a => a.calificacion);
+
   const calificacionMayor = Math.max(...calificaciones);
+
   const calificacionMenor = Math.min(...calificaciones);
 
+  // Impresión en pantalla de estadísticas
   console.log("\n=== Estadísticas ===");
   console.log(`Total de alumnos: ${alumnos.length}`);
   console.log(`Aprobados (calificación ≥ 70): ${aprobados}`);
