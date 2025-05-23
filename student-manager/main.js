@@ -15,6 +15,15 @@ window.onload = function(){
 //me permite ejecutar una funcion para que en el momento del usuario entre a la pagina, antes de cualquier cosa, se ejecute
 //aqui recuperar los objetos del storage y mandarlo al student, sirve para el ciclo de vida de la pagina
 
+window.onload = function () {
+  const stored = localStorage.getItem("students");
+  if (stored) {
+    students = JSON.parse(stored);
+    displayStudents();
+    updateAverage();
+  }
+}
+
 function addStudent() {
     const name = document.getElementById("nameInput").value.trim();
     const grade = parseFloat(document.getElementById("gradeInput").value);
